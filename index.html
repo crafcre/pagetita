@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Empanadas Tita</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+  <!-- Font Awesome Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <h1 class="hero-title">Primer Pedido 5% off</h1>
+  </header>
+  <!-- GALERÍA DE PRODUCTOS -->
+  <main>
+    <div class="gallery">
+      <!-- CARD 1 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="resources/E_Q1.jpg" alt="Empanada Queso - Frontal">
+        <img src="resources/E_Q2.jpg" alt="Empanada Queso - Trasera">
+        <div class="card-info">
+          <h2>Empanada de Queso</h2>
+          <p><strong>Peso neto:</strong> 540 g (12 unidades)</p>
+          <p><strong>Relleno:</strong> Queso mozzarella</p>
+          <button class="btn spec-btn" data-sabor="Queso">Ver especificaciones</button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="resources/E_C1.3.jpg" alt="Empanada Carne - Frontal">
+        <img src="resources/E_C2.jpg" alt="Empanada Carne - Trasera">
+        <div class="card-info">
+          <h2>Empanada de Carne</h2>
+          <p><strong>Peso neto:</strong> 640 g (12 unidades)</p>
+          <p><strong>Relleno:</strong> Carne, cebolla, papa</p>
+          <button class="btn spec-btn" data-sabor="Carne">Ver especificaciones</button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="resources/E_PC_1.jpg" alt="Empanada Papa-Carne - Frontal">
+        <img src="resources/E_PC_2.jpg" alt="Empanada Papa-Carne - Trasera">
+        <div class="card-info">
+          <h2>Empanada Papa-Carne</h2>
+          <p><strong>Peso neto:</strong> 765 g (17 unidades)</p>
+          <p><strong>Relleno:</strong> Papa y carne</p>
+          <button class="btn spec-btn" data-sabor="Papa-Carne">Ver especificaciones</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========= SECCIÓN ¿POR QUÉ ESCOGERNOS? ========= -->
+    <section id="reasons" class="reasons">
+      <h2 data-aos="fade-up">¿Por qué escogernos?</h2>
+      <div class="reason-grid">
+        <div class="reason-card" data-aos="zoom-in" data-aos-delay="100">
+          <!-- Icono de hoja para natural -->
+          <i class="fas fa-leaf"></i>
+          <h3>Ingredientes 100% Naturales</h3>
+          <p>Maíz de peto precocido sin aditivos químicos.</p>
+        </div>
+        <div class="reason-card" data-aos="zoom-in" data-aos-delay="200">
+          <!-- Icono de medalla para calidad -->
+          <i class="fas fa-award"></i>
+          <h3>Calidad Artesanal</h3>
+          <p>Cada empanada elaborada con proceso tradicional.</p>
+        </div>
+        <div class="reason-card" data-aos="zoom-in" data-aos-delay="300">
+          <!-- Icono de horno para preparación -->
+          <i class="fas fa-bread-slice"></i>
+          <h3>Versatilidad de Preparación</h3>
+          <p>Para freír o hornear según tu gusto.</p>
+        </div>
+        <div class="reason-card" data-aos="zoom-in" data-aos-delay="400">
+          <!-- Icono de sonrisa para satisfacción -->
+          <i class="fas fa-smile-beam"></i>
+          <h3>Satisfacción Garantizada</h3>
+          <p>Clientes felices con cada bocado.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Empanadas Tita — Calle 75 # 54-21, Bogotá, Colombia</p>
+  </footer>
+
+  <!-- LIBRERÍAS & SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="animate.js"></script>
+</body>
+
+</html>
